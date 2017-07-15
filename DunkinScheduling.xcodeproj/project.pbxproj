@@ -12,6 +12,9 @@
 		2B3CE3461F1AD19500936E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3CE3441F1AD19500936E52 /* Main.storyboard */; };
 		2B3CE3481F1AD19500936E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3CE3471F1AD19500936E52 /* Assets.xcassets */; };
 		2B3CE34B1F1AD19500936E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3CE3491F1AD19500936E52 /* LaunchScreen.storyboard */; };
+		2B3CE3561F1AD47200936E52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3CE3551F1AD47200936E52 /* LoginViewController.swift */; };
+		2B3CE35A1F1AD53200936E52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B3CE3591F1AD53200936E52 /* GoogleService-Info.plist */; };
+		A1C1FD6E2598C1C01BEAC4BC /* Pods_DunkinScheduling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F472FA72E099A632F07D8C /* Pods_DunkinScheduling.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		2B3CE3471F1AD19500936E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B3CE34A1F1AD19500936E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B3CE34C1F1AD19500936E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3CE3551F1AD47200936E52 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2B3CE3591F1AD53200936E52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F7EFBFD9A7712A35AD504A0 /* Pods-DunkinScheduling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DunkinScheduling.release.xcconfig"; path = "Pods/Target Support Files/Pods-DunkinScheduling/Pods-DunkinScheduling.release.xcconfig"; sourceTree = "<group>"; };
+		51F472FA72E099A632F07D8C /* Pods_DunkinScheduling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DunkinScheduling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C001DCC12AABBF0B982A508 /* Pods-DunkinScheduling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DunkinScheduling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DunkinScheduling/Pods-DunkinScheduling.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C1FD6E2598C1C01BEAC4BC /* Pods_DunkinScheduling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				2B3CE33F1F1AD19500936E52 /* DunkinScheduling */,
 				2B3CE33E1F1AD19500936E52 /* Products */,
+				6D9F523B262BA7F46814BDBE /* Pods */,
+				311B1DA555D8A113DFA4E116 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,41 @@
 		2B3CE33F1F1AD19500936E52 /* DunkinScheduling */ = {
 			isa = PBXGroup;
 			children = (
-				2B3CE3401F1AD19500936E52 /* AppDelegate.swift */,
+				2B3CE3521F1AD1E600936E52 /* Assets */,
 				2B3CE3421F1AD19500936E52 /* ViewController.swift */,
 				2B3CE3441F1AD19500936E52 /* Main.storyboard */,
+				2B3CE3551F1AD47200936E52 /* LoginViewController.swift */,
+				2B3CE3591F1AD53200936E52 /* GoogleService-Info.plist */,
+			);
+			path = DunkinScheduling;
+			sourceTree = "<group>";
+		};
+		2B3CE3521F1AD1E600936E52 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2B3CE3401F1AD19500936E52 /* AppDelegate.swift */,
 				2B3CE3471F1AD19500936E52 /* Assets.xcassets */,
 				2B3CE3491F1AD19500936E52 /* LaunchScreen.storyboard */,
 				2B3CE34C1F1AD19500936E52 /* Info.plist */,
 			);
-			path = DunkinScheduling;
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		311B1DA555D8A113DFA4E116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51F472FA72E099A632F07D8C /* Pods_DunkinScheduling.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D9F523B262BA7F46814BDBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C001DCC12AABBF0B982A508 /* Pods-DunkinScheduling.debug.xcconfig */,
+				3F7EFBFD9A7712A35AD504A0 /* Pods-DunkinScheduling.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B3CE34F1F1AD19500936E52 /* Build configuration list for PBXNativeTarget "DunkinScheduling" */;
 			buildPhases = (
+				890DC68935A9AE0E4CCB0A99 /* [CP] Check Pods Manifest.lock */,
 				2B3CE3391F1AD19500936E52 /* Sources */,
 				2B3CE33A1F1AD19500936E52 /* Frameworks */,
 				2B3CE33B1F1AD19500936E52 /* Resources */,
+				333848CC77522BB0AAF4A8F9 /* [CP] Embed Pods Frameworks */,
+				488707D7DC65F58BA6A61860 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3CE35A1F1AD53200936E52 /* GoogleService-Info.plist in Resources */,
 				2B3CE34B1F1AD19500936E52 /* LaunchScreen.storyboard in Resources */,
 				2B3CE3481F1AD19500936E52 /* Assets.xcassets in Resources */,
 				2B3CE3461F1AD19500936E52 /* Main.storyboard in Resources */,
@@ -132,11 +174,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		333848CC77522BB0AAF4A8F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DunkinScheduling/Pods-DunkinScheduling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		488707D7DC65F58BA6A61860 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DunkinScheduling/Pods-DunkinScheduling-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		890DC68935A9AE0E4CCB0A99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B3CE3391F1AD19500936E52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3CE3561F1AD47200936E52 /* LoginViewController.swift in Sources */,
 				2B3CE3431F1AD19500936E52 /* ViewController.swift in Sources */,
 				2B3CE3411F1AD19500936E52 /* AppDelegate.swift in Sources */,
 			);
@@ -261,6 +352,7 @@
 		};
 		2B3CE3501F1AD19500936E52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C001DCC12AABBF0B982A508 /* Pods-DunkinScheduling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCU5763FCG;
@@ -274,6 +366,7 @@
 		};
 		2B3CE3511F1AD19500936E52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7EFBFD9A7712A35AD504A0 /* Pods-DunkinScheduling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCU5763FCG;
@@ -304,6 +397,7 @@
 				2B3CE3511F1AD19500936E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
