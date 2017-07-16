@@ -14,6 +14,12 @@
 		2B3CE34B1F1AD19500936E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3CE3491F1AD19500936E52 /* LaunchScreen.storyboard */; };
 		2B3CE3561F1AD47200936E52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3CE3551F1AD47200936E52 /* LoginViewController.swift */; };
 		2B3CE35A1F1AD53200936E52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B3CE3591F1AD53200936E52 /* GoogleService-Info.plist */; };
+		2B6111441F1B09A9001E14D4 /* Menu1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6111421F1B09A9001E14D4 /* Menu1.swift */; };
+		2B6111451F1B09A9001E14D4 /* Menu1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6111431F1B09A9001E14D4 /* Menu1.xib */; };
+		2B6111481F1B0C91001E14D4 /* Menu2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6111461F1B0C91001E14D4 /* Menu2.swift */; };
+		2B6111491F1B0C91001E14D4 /* Menu2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6111471F1B0C91001E14D4 /* Menu2.xib */; };
+		2B61114C1F1B0E59001E14D4 /* Menu3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B61114A1F1B0E59001E14D4 /* Menu3.swift */; };
+		2B61114D1F1B0E59001E14D4 /* Menu3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B61114B1F1B0E59001E14D4 /* Menu3.xib */; };
 		A1C1FD6E2598C1C01BEAC4BC /* Pods_DunkinScheduling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F472FA72E099A632F07D8C /* Pods_DunkinScheduling.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +33,12 @@
 		2B3CE34C1F1AD19500936E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B3CE3551F1AD47200936E52 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2B3CE3591F1AD53200936E52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2B6111421F1B09A9001E14D4 /* Menu1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu1.swift; sourceTree = "<group>"; };
+		2B6111431F1B09A9001E14D4 /* Menu1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu1.xib; sourceTree = "<group>"; };
+		2B6111461F1B0C91001E14D4 /* Menu2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu2.swift; sourceTree = "<group>"; };
+		2B6111471F1B0C91001E14D4 /* Menu2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu2.xib; sourceTree = "<group>"; };
+		2B61114A1F1B0E59001E14D4 /* Menu3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu3.swift; sourceTree = "<group>"; };
+		2B61114B1F1B0E59001E14D4 /* Menu3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu3.xib; sourceTree = "<group>"; };
 		3F7EFBFD9A7712A35AD504A0 /* Pods-DunkinScheduling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DunkinScheduling.release.xcconfig"; path = "Pods/Target Support Files/Pods-DunkinScheduling/Pods-DunkinScheduling.release.xcconfig"; sourceTree = "<group>"; };
 		51F472FA72E099A632F07D8C /* Pods_DunkinScheduling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DunkinScheduling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C001DCC12AABBF0B982A508 /* Pods-DunkinScheduling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DunkinScheduling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DunkinScheduling/Pods-DunkinScheduling.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,8 +78,14 @@
 			isa = PBXGroup;
 			children = (
 				2B3CE3521F1AD1E600936E52 /* Assets */,
-				2B3CE3421F1AD19500936E52 /* ViewController.swift */,
 				2B3CE3441F1AD19500936E52 /* Main.storyboard */,
+				2B3CE3421F1AD19500936E52 /* ViewController.swift */,
+				2B6111421F1B09A9001E14D4 /* Menu1.swift */,
+				2B6111431F1B09A9001E14D4 /* Menu1.xib */,
+				2B6111461F1B0C91001E14D4 /* Menu2.swift */,
+				2B6111471F1B0C91001E14D4 /* Menu2.xib */,
+				2B61114A1F1B0E59001E14D4 /* Menu3.swift */,
+				2B61114B1F1B0E59001E14D4 /* Menu3.xib */,
 				2B3CE3551F1AD47200936E52 /* LoginViewController.swift */,
 				2B3CE3591F1AD53200936E52 /* GoogleService-Info.plist */,
 			);
@@ -165,10 +183,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B61114D1F1B0E59001E14D4 /* Menu3.xib in Resources */,
 				2B3CE35A1F1AD53200936E52 /* GoogleService-Info.plist in Resources */,
+				2B6111491F1B0C91001E14D4 /* Menu2.xib in Resources */,
 				2B3CE34B1F1AD19500936E52 /* LaunchScreen.storyboard in Resources */,
 				2B3CE3481F1AD19500936E52 /* Assets.xcassets in Resources */,
 				2B3CE3461F1AD19500936E52 /* Main.storyboard in Resources */,
+				2B6111451F1B09A9001E14D4 /* Menu1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,9 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6111441F1B09A9001E14D4 /* Menu1.swift in Sources */,
 				2B3CE3561F1AD47200936E52 /* LoginViewController.swift in Sources */,
 				2B3CE3431F1AD19500936E52 /* ViewController.swift in Sources */,
 				2B3CE3411F1AD19500936E52 /* AppDelegate.swift in Sources */,
+				2B61114C1F1B0E59001E14D4 /* Menu3.swift in Sources */,
+				2B6111481F1B0C91001E14D4 /* Menu2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

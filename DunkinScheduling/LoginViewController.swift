@@ -38,7 +38,7 @@ class LoginViewController : UIViewController {
                 } else {
                     self.userPass.text = ""
                     self.userEmail.text = ""
-                    //self.displayView(Identifier: "ShiftSelection")
+                    self.displayView(Identifier: "Profile")
                 }
             })
         } else {
@@ -81,7 +81,7 @@ class LoginViewController : UIViewController {
     func displayView(Identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: Identifier)
-        self.navigationController?.pushViewController(newViewController, animated: true)
+        self.present(newViewController, animated: true, completion: nil)
     }
     
 }
