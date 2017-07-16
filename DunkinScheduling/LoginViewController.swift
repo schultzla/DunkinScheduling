@@ -13,9 +13,12 @@ class LoginViewController : UIViewController {
     
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPass: UITextField!
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func didReceiveMemoryWarning() {

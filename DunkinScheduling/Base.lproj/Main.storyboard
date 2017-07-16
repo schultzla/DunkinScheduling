@@ -21,13 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Xs-sp-ECZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Xs-sp-ECZ">
                                 <rect key="frame" x="28" y="197" width="318" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkZ-oW-TAy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkZ-oW-TAy">
                                 <rect key="frame" x="28" y="235" width="318" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -96,6 +96,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="bap-xz-fgr"/>
                     <connections>
+                        <outlet property="loginButton" destination="ucr-Ij-sXk" id="oKG-OT-DVx"/>
+                        <outlet property="registerButton" destination="C7a-XF-pwx" id="TXw-Lr-bIK"/>
                         <outlet property="userEmail" destination="1Xs-sp-ECZ" id="UDH-y5-WUp"/>
                         <outlet property="userPass" destination="zkZ-oW-TAy" id="n0d-pe-DzE"/>
                         <segue destination="Zso-QM-DY2" kind="show" identifier="loginPush" id="vBd-eg-LA7"/>

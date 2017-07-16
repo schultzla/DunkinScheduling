@@ -33,6 +33,7 @@ class Menu1: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             self.welcomeLabel.text = "Welcome, " + (user?.email)!
+            
         }
     }
     
