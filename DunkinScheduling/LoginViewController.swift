@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController : UIViewController {
+class LoginViewController : UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPass: UITextField!
@@ -18,7 +18,30 @@ class LoginViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        userEmail.delegate = self
+        userPass.delegate = self
+        registerButton.isUserInteractionEnabled = false
+        loginButton.isUserInteractionEnabled = false
+        registerButton.alpha = 0.5
+        loginButton.alpha = 0.5
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if (userEmail.text?.isEmpty)!, (userPass.text?.isEmpty)! {
+            registerButton.isEnabled = false
+            loginButton.isEnabled = false
+            registerButton.isUserInteractionEnabled = false
+            loginButton.isUserInteractionEnabled = false
+            registerButton.alpha = 0.5
+            loginButton.alpha = 0.5
+        } else {
+            registerButton.isEnabled = true
+            loginButton.isEnabled = true
+            registerButton.isUserInteractionEnabled = true
+            loginButton.isUserInteractionEnabled = true
+            registerButton.alpha = 1.0
+            loginButton.alpha = 1.0
+        }
     }
     
     override func didReceiveMemoryWarning() {

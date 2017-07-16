@@ -77,17 +77,11 @@
 		2B3CE33F1F1AD19500936E52 /* DunkinScheduling */ = {
 			isa = PBXGroup;
 			children = (
-				2B3CE3521F1AD1E600936E52 /* Assets */,
 				2B3CE3441F1AD19500936E52 /* Main.storyboard */,
 				2B3CE3421F1AD19500936E52 /* ViewController.swift */,
-				2B6111421F1B09A9001E14D4 /* Menu1.swift */,
-				2B6111431F1B09A9001E14D4 /* Menu1.xib */,
-				2B6111461F1B0C91001E14D4 /* Menu2.swift */,
-				2B6111471F1B0C91001E14D4 /* Menu2.xib */,
-				2B61114A1F1B0E59001E14D4 /* Menu3.swift */,
-				2B61114B1F1B0E59001E14D4 /* Menu3.xib */,
 				2B3CE3551F1AD47200936E52 /* LoginViewController.swift */,
-				2B3CE3591F1AD53200936E52 /* GoogleService-Info.plist */,
+				2BC885E01F1BC71600BCE8B4 /* Menus */,
+				2B3CE3521F1AD1E600936E52 /* Assets */,
 			);
 			path = DunkinScheduling;
 			sourceTree = "<group>";
@@ -95,12 +89,26 @@
 		2B3CE3521F1AD1E600936E52 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2B3CE3591F1AD53200936E52 /* GoogleService-Info.plist */,
 				2B3CE3401F1AD19500936E52 /* AppDelegate.swift */,
 				2B3CE3471F1AD19500936E52 /* Assets.xcassets */,
 				2B3CE3491F1AD19500936E52 /* LaunchScreen.storyboard */,
 				2B3CE34C1F1AD19500936E52 /* Info.plist */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		2BC885E01F1BC71600BCE8B4 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				2B6111421F1B09A9001E14D4 /* Menu1.swift */,
+				2B6111431F1B09A9001E14D4 /* Menu1.xib */,
+				2B6111461F1B0C91001E14D4 /* Menu2.swift */,
+				2B6111471F1B0C91001E14D4 /* Menu2.xib */,
+				2B61114A1F1B0E59001E14D4 /* Menu3.swift */,
+				2B61114B1F1B0E59001E14D4 /* Menu3.xib */,
+			);
+			name = Menus;
 			sourceTree = "<group>";
 		};
 		311B1DA555D8A113DFA4E116 /* Frameworks */ = {

@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class Menu2: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        postToDatabase()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +21,16 @@ class Menu2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func postToDatabase() {
+        let refEmployees = Database.database().reference(withPath: "Employees")
+        let schedule : [String : String] = ["0" : "Off",
+                                            "1" : "Off",
+                                            "2" : "2-10",
+                                            "3" : "2-10:30",
+                                            "4" : "2:30-10:30",
+                                            "5" : "2-10",
+                                            "6" : "Off"]
+        refEmployees.child("Logan/July/15th").setValue(schedule)
+        
     }
-    */
-
 }

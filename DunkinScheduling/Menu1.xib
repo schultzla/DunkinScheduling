@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="welcomeLabel" destination="uKK-Ho-jtU" id="4g5-Ef-EFx"/>
+                <outlet property="workSchedule" destination="fGK-Gj-MBu" id="pHv-L0-Yw3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -43,15 +44,23 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fGK-Gj-MBu">
+                    <rect key="frame" x="0.0" y="56" width="375" height="522"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.94791805976345722" blue="0.38291193983758243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fGK-Gj-MBu" firstAttribute="trailing" secondItem="MNe-HY-9uX" secondAttribute="trailing" id="2dU-jo-tT2"/>
+                <constraint firstAttribute="bottom" secondItem="fGK-Gj-MBu" secondAttribute="bottom" constant="89" id="7V4-V4-GI4"/>
                 <constraint firstItem="MNe-HY-9uX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LOh-0H-QIN"/>
                 <constraint firstItem="uKK-Ho-jtU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="PAE-BX-qho"/>
+                <constraint firstItem="fGK-Gj-MBu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="56" id="eXb-tU-3Pc"/>
                 <constraint firstItem="uKK-Ho-jtU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="j8v-EO-Fje"/>
                 <constraint firstItem="uKK-Ho-jtU" firstAttribute="centerX" secondItem="MNe-HY-9uX" secondAttribute="centerX" id="vJc-i4-sWa"/>
                 <constraint firstAttribute="trailing" secondItem="MNe-HY-9uX" secondAttribute="trailing" id="vqJ-M5-WmF"/>
                 <constraint firstAttribute="bottom" secondItem="MNe-HY-9uX" secondAttribute="bottom" id="z2f-0e-vB1"/>
+                <constraint firstItem="fGK-Gj-MBu" firstAttribute="leading" secondItem="MNe-HY-9uX" secondAttribute="leading" id="zql-R3-Zih"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="86.5"/>
         </view>
