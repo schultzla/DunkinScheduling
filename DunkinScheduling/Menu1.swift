@@ -12,25 +12,24 @@ import Firebase
 class Menu1: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var handle: AuthStateDidChangeListenerHandle?
-    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var workSchedule: UITableView!
     
+    var names: [String] = [String]()
     var days = [String]()
     var shifts = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        names = ["Logan", "Caitlin", "Treanna"]
         workSchedule.dataSource = self
         workSchedule.delegate = self
 
-        let refEmployees = Database.database().reference(withPath: "Employees")
+        let ref = Database.database().reference().child("Employees").child("Logan")
     
-        refEmployees.child("Logan/July/15th").observe(.childAdded, with: {
+        ref.observeSingleEvent(of: .value, with: {
             snapshot in
-            
-            let shift = snapshot.value as? String
-            self.shifts.append(shift!)
+            self.shifts = snapshot.value as! [String]
             self.workSchedule.reloadData()
         })
     }
@@ -41,13 +40,8 @@ class Menu1: UIViewController, UITableViewDelegate, UITableViewDataSource{
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func logoutPressed(_ sender: Any) {
-        displayView(Identifier: "Login")
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            self.welcomeLabel.text = "Welcome, " + (user?.email)!
             
         }
     }
@@ -62,7 +56,7 @@ class Menu1: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = shifts[indexPath.section]
+        cell.textLabel?.text = shifts[indexPath.section] 
         return cell
     }
     

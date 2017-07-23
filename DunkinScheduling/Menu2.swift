@@ -22,7 +22,7 @@ class Menu2: UIViewController {
     }
     
     func postToDatabase() {
-        let refEmployees = Database.database().reference(withPath: "Employees")
+        let refEmployees = Database.database().reference().child("Employees")
         let schedule : [String : String] = ["0" : "Off",
                                             "1" : "Off",
                                             "2" : "2-10",
@@ -30,7 +30,16 @@ class Menu2: UIViewController {
                                             "4" : "2:30-10:30",
                                             "5" : "2-10",
                                             "6" : "Off"]
-        refEmployees.child("Logan/July/15th").setValue(schedule)
+        refEmployees.child("Logan").setValue(schedule)
+        
+        let schedule2 : [String : String] = ["0" : "Off",
+                                            "1" : "Off",
+                                            "2" : "Off",
+                                            "3" : "Off",
+                                            "4" : "2:30-10:30",
+                                            "5" : "Off",
+                                            "6" : "Off"]
+        refEmployees.child("Caitlin").setValue(schedule2)
         
     }
 }

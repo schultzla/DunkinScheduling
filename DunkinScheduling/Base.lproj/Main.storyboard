@@ -60,9 +60,9 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donuts" translatesAutoresizingMaskIntoConstraints="NO" id="dgY-lH-FYI">
-                                <rect key="frame" x="123" y="74" width="128" height="91"/>
+                                <rect key="frame" x="123" y="39" width="128" height="91"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="Nxw-vb-6B1"/>
+                                    <constraint firstAttribute="width" constant="128" id="9kR-V7-0eM"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5V-WG-KrM">
@@ -73,21 +73,33 @@
                                     <segue destination="Zso-QM-DY2" kind="show" id="qGa-mP-KUP"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWR-v8-SkQ">
+                                <rect key="frame" x="28" y="159" width="318" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Wf3-pL-FN8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zkZ-oW-TAy" firstAttribute="leading" secondItem="1Xs-sp-ECZ" secondAttribute="leading" id="0nm-rY-Yny"/>
+                            <constraint firstItem="WWR-v8-SkQ" firstAttribute="trailing" secondItem="1Xs-sp-ECZ" secondAttribute="trailing" id="1PR-DT-BzA"/>
+                            <constraint firstItem="WWR-v8-SkQ" firstAttribute="leading" secondItem="1Xs-sp-ECZ" secondAttribute="leading" id="7Tn-Z6-amQ"/>
                             <constraint firstItem="zkZ-oW-TAy" firstAttribute="trailing" secondItem="1Xs-sp-ECZ" secondAttribute="trailing" id="8zZ-XS-O9L"/>
                             <constraint firstItem="C7a-XF-pwx" firstAttribute="height" secondItem="ucr-Ij-sXk" secondAttribute="height" id="9Vy-ea-M2p"/>
-                            <constraint firstItem="dgY-lH-FYI" firstAttribute="top" secondItem="vfp-zb-lUS" secondAttribute="bottom" constant="54" id="KuZ-ky-ZqS"/>
+                            <constraint firstItem="dgY-lH-FYI" firstAttribute="top" secondItem="vfp-zb-lUS" secondAttribute="bottom" constant="19" id="Ecc-Rs-Tmw"/>
                             <constraint firstItem="C7a-XF-pwx" firstAttribute="leading" secondItem="ucr-Ij-sXk" secondAttribute="trailing" constant="7.9999999999999716" id="LiI-zp-Juk"/>
                             <constraint firstItem="C7a-XF-pwx" firstAttribute="width" secondItem="ucr-Ij-sXk" secondAttribute="width" id="Mke-8t-pnA"/>
                             <constraint firstItem="ucr-Ij-sXk" firstAttribute="top" secondItem="zkZ-oW-TAy" secondAttribute="bottom" constant="8" symbolic="YES" id="NAq-YF-sez"/>
-                            <constraint firstItem="1Xs-sp-ECZ" firstAttribute="top" secondItem="dgY-lH-FYI" secondAttribute="bottom" constant="32" id="OEy-9w-coZ"/>
+                            <constraint firstItem="1Xs-sp-ECZ" firstAttribute="top" secondItem="WWR-v8-SkQ" secondAttribute="bottom" constant="8" symbolic="YES" id="U7k-EE-ohq"/>
+                            <constraint firstItem="WWR-v8-SkQ" firstAttribute="top" secondItem="dgY-lH-FYI" secondAttribute="bottom" constant="29" id="Vjo-q3-cFM"/>
                             <constraint firstItem="C7a-XF-pwx" firstAttribute="top" secondItem="zkZ-oW-TAy" secondAttribute="bottom" constant="8" symbolic="YES" id="WkH-od-h2P"/>
-                            <constraint firstItem="dgY-lH-FYI" firstAttribute="centerX" secondItem="1Xs-sp-ECZ" secondAttribute="centerX" id="ce4-qe-K7D"/>
                             <constraint firstItem="1Xs-sp-ECZ" firstAttribute="top" secondItem="vfp-zb-lUS" secondAttribute="bottom" constant="177" id="hK5-Dx-yav"/>
                             <constraint firstItem="zkZ-oW-TAy" firstAttribute="top" secondItem="1Xs-sp-ECZ" secondAttribute="bottom" constant="8" symbolic="YES" id="hpk-hB-G97"/>
+                            <constraint firstItem="dgY-lH-FYI" firstAttribute="centerX" secondItem="WWR-v8-SkQ" secondAttribute="centerX" id="kNq-g6-unD"/>
                             <constraint firstItem="1Xs-sp-ECZ" firstAttribute="leading" secondItem="ucr-Ij-sXk" secondAttribute="leading" id="lVh-nG-92k"/>
                             <constraint firstItem="1Xs-sp-ECZ" firstAttribute="trailing" secondItem="C7a-XF-pwx" secondAttribute="trailing" id="pPT-Vu-sBT"/>
                             <constraint firstItem="ucr-Ij-sXk" firstAttribute="leading" secondItem="7Hk-7p-JNq" secondAttribute="leading" constant="28" id="wVS-NZ-DCz"/>
@@ -110,7 +122,6 @@
         <!--Profile-->
         <scene sceneID="vlt-C9-h9k">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vXA-Dc-2Lh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="Profile" title="Profile" id="Zso-QM-DY2" customClass="ViewController" customModule="DunkinScheduling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p5c-va-LYg"/>
@@ -137,6 +148,7 @@
                         <outlet property="profileScroll" destination="dhv-JK-2JY" id="yve-ox-9RD"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXA-Dc-2Lh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="169.56521739130437"/>
         </scene>
